@@ -269,7 +269,8 @@ aep-observaacao/
 │           ├── Validador.java                     # Validações de entrada do usuário
 │           └── Formatador.java                    # Formatação de saída no terminal
 ├── docs/
-│   └── perfis_e_personas.docx                    # Perfis e personas (entrega IHC)
+│   ├── perfis_e_personas.docx                    # Perfis e personas (entrega IHC)
+│   └── relatorio_clean_code.docx                 # Relatório Clean Code 3 funções
 ├── compile.bat                                    # Script de compilação (Windows)
 ├── run.bat                                        # Script de execução (Windows)
 └── README.md
@@ -281,13 +282,14 @@ aep-observaacao/
 
 ### 1º Bimestre ✅
 
-- [x] Versão Beta funcional em CLI (Java 17, sem framework)
-- [x] Perfis e personas (IHC) — `docs/perfis_e_personas.docx`
-- [ ] Relatório Clean Code (3 funções) — em elaboração
+- ✅ Versão Beta funcional em CLI (Java 17, sem framework)
+- ✅ Perfis e personas (IHC) — `docs/perfis_e_personas.docx`
+- ✅ Relatório Clean Code (3 funções) — `docs/relatorio_clean_code.docx`
+- ⏳ Vídeo de apresentação (até 5 min)
 
 ### 2º Bimestre
 
-- [ ] Wireframes de todas as telas (IHC)
-- [ ] Migração para Spring Boot (controller / service / repository)
-- [ ] Persistência em arquivo `.txt` / `.csv` ou banco de dados
-- [ ] Relatório de métricas (SonarQube / Checkstyle / PMD)
+- ⬜ Wireframes de todas as telas (IHC)
+- ⬜ Migração para Spring Boot (controller / service / repository)
+- ⬜ Persistência em arquivo `.txt` / `.csv` ou banco de dados
+- ⬜ Relatório de métricas (SonarQube / Checkstyle / PMD)
