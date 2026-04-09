@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 public abstract class Solicitacao {
 
@@ -37,6 +38,8 @@ public abstract class Solicitacao {
 
     public abstract boolean isAnonima();
 
+    public abstract Map<String, String> getDadosComplementares();
+
     public void atualizarStatus(Status novoStatus, String comentario, String responsavel) {
         if (!this.status.podeTransicionarPara(novoStatus)) {
             throw new IllegalStateException(
@@ -55,8 +58,6 @@ public abstract class Solicitacao {
     public boolean estaDentroDoPrazo() {
         return LocalDateTime.now().isBefore(calcularPrazoSLA());
     }
-
-    // --- Getters ---
 
     public String getProtocolo() {
         return protocolo;

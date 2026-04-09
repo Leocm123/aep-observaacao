@@ -3,6 +3,9 @@ package observaacao.domain.model;
 import observaacao.domain.enums.Categoria;
 import observaacao.domain.enums.Prioridade;
 
+import java.util.Collections;
+import java.util.Map;
+
 public class SolicitacaoAnonima extends Solicitacao {
 
     private final String motivoAnonimato;
@@ -17,6 +20,11 @@ public class SolicitacaoAnonima extends Solicitacao {
     @Override
     public boolean isAnonima() {
         return true;
+    }
+
+    @Override
+    public Map<String, String> getDadosComplementares() {
+        return Collections.emptyMap();
     }
 
     public String getMotivoAnonimato() {
