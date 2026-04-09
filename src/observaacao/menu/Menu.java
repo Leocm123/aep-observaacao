@@ -27,16 +27,13 @@ public class Menu {
         System.out.println("   ObservaAção — Ouvidoria Cidadã Digital");
         System.out.println("========================================\n");
 
-        boolean executando = true;
-        while (executando) {
-            executando = exibirMenuPrincipal();
-        }
+        while (processarOpcaoPrincipal()) { }
 
         System.out.println("\nAté logo! Obrigado por usar o ObservaAção.");
         scanner.close();
     }
 
-    private boolean exibirMenuPrincipal() {
+    private boolean processarOpcaoPrincipal() {
         System.out.println("\nAcesse como:");
         System.out.println("  1. Cidadão");
         System.out.println("  2. Atendente / Gestor");
@@ -194,8 +191,8 @@ public class Menu {
             return;
         }
         System.out.println("\n" + lista.size() + " solicitação(ões):");
-        for (Solicitacao s : lista) {
-            Formatador.imprimirSolicitacaoResumida(s);
+        for (Solicitacao solicitacao : lista) {
+            Formatador.imprimirSolicitacaoResumida(solicitacao);
         }
     }
 
